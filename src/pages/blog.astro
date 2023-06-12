@@ -1,0 +1,30 @@
+---
+import Card from "../components/Card.astro";
+import Title from "../components/Title.astro";
+import Layout from "../layouts/Layout.astro";
+
+const articles = await Astro.glob("../articles/*.md");
+---
+
+
+<Layout title="Argonium | Blog">
+    <Title title="Argonium blog" text="Stay up to date with what's happening here" />
+    <section class="flex items-center justify-center">
+        <div class="flex flex-wrap items-center justify-center">
+            {articles.map(article => (
+                <Card>
+                    <a href={`/blogs/${article.frontmatter.slug}`}>
+                        <div class="p-5">
+                            <header class="text-xl pb-5 text-center">{new Date(article.frontmatter.date).toLocaleDateString()}</header>
+                            <img class="h-96 pb-5 object-cover" src={article.frontmatter.img} alt="">
+                            <div>
+                                <h3 class="text-3xl">{article.frontmatter.title}</h3>
+                                <p class="text-[#aeb0b8] max-w-xl">{article.frontmatter.excerpt}</p>
+                            </div>
+                        </div>
+                    </a>
+                </Card>
+            ))}
+        </div>
+    </section>
+</Layout>

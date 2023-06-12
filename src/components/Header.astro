@@ -1,0 +1,31 @@
+
+<header class="h-20 bg-primary sm:h-28 cursor-default">
+    <div class="pt-6 absolute left-1/2 -translate-x-1/2 w-full">
+        <div class="absolute w-max left-1/4 sm:left-1/2 sm:-translate-x-1/2">
+            <a href="/">
+                <img src="/argonium-full.png" class="h-10" alt="">
+            </a>
+        </div>
+        <div class="text-gray-400 absolute right-1/4 text-xl sm:mt-14 sm:w-max sm:left-1/2 sm:-translate-x-1/2">
+            <ul class="list-none float-left">
+                <li class="flex">
+                    <a href="/" class="hover:text-white ml-1 mr-1 hover:duration-150 duration-300">Home</a>
+                    <a href="/blog" class="hover:text-white ml-1 mr-1 hover:duration-150 duration-300">Blog</a>
+                    <a href="/docs" class="mr-3 hover:text-white ml-1 hover:duration-150 duration-300">Docs</a>
+                    <div class="bg-gray-400 h-8 w-1 rounded-lg duration-500 cursor-pointer" id="bar"></div>
+                    <a href="https://www.github.com/aapelix/argonium"><i class="text-2xl cursor-pointer fa-brands fa-github ml-3 mr-1 hover:text-white hover:duration-150 duration-300"></i></a>
+                    <a href="/chat"><i class="text-2xl cursor-pointer fa-brands fa-discord ml-1 mr-1 hover:text-white hover:duration-150 duration-300"></i></a>
+                    <a href="https://www.npmjs.com/package/argonium"><i class="text-2xl cursor-pointer fa-brands fa-npm ml-1 mr-1 hover:text-white hover:duration-150 duration-300"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<script>
+    const bar = document.getElementById("bar");
+
+    bar.addEventListener("click", () => {
+        bar.style.transform = "rotate(360deg)";
+    })
+</script>

@@ -1,0 +1,26 @@
+---
+const { text = "Amogus"} = Astro.props;
+---
+
+<div class="flex ml-10 p-3 rounded-lg bg-secondary">
+    <h2 class="">{text}</h2>
+    <copy-button data-text={text}>
+        <i class="fa-solid fa-copy mt-2 ml-3 copyButton cursor-pointer duration-300 hover:text-gray-400 sm:p-0" id="copyButton"></i>
+    </copy-button>
+</div>
+
+<script>
+    class copyToClipBoard extends HTMLElement {
+        constructor() {
+            super();
+            const button = document.getElementById("copyButton");
+            const text = this.dataset.text;
+
+            button.addEventListener("click", () => {
+                navigator.clipboard.writeText(text)
+            })
+        }
+    }
+
+    customElements.define("copy-button", copyToClipBoard);
+</script>
