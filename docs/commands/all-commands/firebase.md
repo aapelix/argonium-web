@@ -2,6 +2,8 @@
 
 ## Firebase Init
 
+##### All these commands are run with `a firebase` OR `a fb` as a prefix.
+
 ```bash
 a firebase init
 ```

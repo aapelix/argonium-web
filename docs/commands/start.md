@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introduction
 
 All information about the commands in Argonium can be found here. This includes the command name, description, usage, and examples
