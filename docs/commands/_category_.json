@@ -1,0 +1,8 @@
+{
+    "label": "Commands",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "All information about the commands of the cli tool"
+    }
+}
