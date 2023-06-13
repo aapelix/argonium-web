@@ -21,7 +21,7 @@ const config = {
   organizationName: 'aapelix', // Usually your GitHub org/user name.
   projectName: 'argonium', // Usually your repo name.
 
-  onBrokenLinks: 'ignore',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -85,7 +85,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/intro',
+                to: '/',
               },
             ],
           },
@@ -112,7 +112,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Aapelix, Inc. CMD Made easier.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Aapelix, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
