@@ -9,7 +9,7 @@ sidebar_position: 2
 ### Installing with npm
 
 ```bash
-npm install -g argonium
+npm install argonium@latest
 ```
 
 ### Installing with yarn
