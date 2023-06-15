@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Argonium',
   tagline: 'CMD Made easy',
-  favicon: 'img/argonium.png',
+  favicon: 'img/argo-sm.png',
 
   // Set the production url of your site here
   url: 'https://argonium.net',
@@ -57,12 +57,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/argonium.png',
+      image: 'img/argo.png',
       navbar: {
-        title: 'Argonium',
+        title: '',
         logo: {
           alt: 'Argonium Logo',
-          src: 'img/argonium.png',
+          src: 'img/argo.png',
         },
         items: [
           {
